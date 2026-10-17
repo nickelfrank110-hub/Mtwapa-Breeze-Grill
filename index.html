@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mtwapa Breeze Grill - Reserve, Menu &amp; Orders</title>
+    <meta name="description" content="Fresh seafood and ocean breezes in Mtwapa. Reserve a table, view our menu, find us on the map, or order on WhatsApp.">
+    <meta property="og:title" content="Mtwapa Breeze Grill">
+    <meta property="og:description" content="Fresh seafood, cool ocean breezes, and the best vibes in Mtwapa.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="profile">
+            <div class="avatar"><span aria-hidden="true">🌊</span></div>
+            <h1>Mtwapa Breeze Grill</h1>
+            <p class="bio">Fresh seafood, cool ocean breezes, and the best vibes in Mtwapa. Open daily from 11 AM.</p>
+        </header>
+
+        
+        <main class="links-wrapper">
+            <a href="#form" class="link-btn primary-btn"><span aria-hidden="true">📅</span> Reserve a Table</a>
+            <a href="#menu" class="link-btn"><span aria-hidden="true">🍽️</span> View Our Menu</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Mtwapa+Town,+Kenya" class="link-btn"><span aria-hidden="true">📍</span> Find Us on Google Maps</a>
+            <a id="whatsapp-link" href="https://wa.me/254712345678" class="link-btn"><span aria-hidden="true">📞</span> WhatsApp Us to Order</a>
+            <button type="button" class="link-btn mpesa-btn" id="copy-btn" data-till="123456">
+    <span aria-hidden="true">📱</span> Pay via M-Pesa (Till: 123456)
+</button>
+<p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
+
+        <section id="menu" class="panel">
+    <h2>Our Menu</h2>
+    <ul class="menu-list">
+        <li><span>Grilled Tilapia</span><span>KSh 900</span></li>
+        <li><span>Coconut Prawns</span><span>KSh 1,200</span></li>
+        <li><span>Fish &amp; Chips</span><span>KSh 800</span></li>
+    </ul>
+</section>
+
+<section id="form" class="panel">
+    <h2>Reserve a Table</h2>
+    <form id="reserve-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name" required>
+
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" required>
+
+        <label for="time">Time</label>
+        <input id="time" name="time" type="time" min="11:00" max="22:00" required>
+
+        <label for="guests">Guests</label>
+        <input id="guests" name="guests" type="number" min="1" max="20" value="2" required>
+
+        <button type="submit" class="link-btn primary-btn">Send on WhatsApp</button>
+    </form>
+</section>
+        </main>
+        <footer>
+            <p>© 2026 Mtwapa Breeze Grill. Built by Nickel Frank.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+  
